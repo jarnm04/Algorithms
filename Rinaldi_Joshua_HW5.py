@@ -1,11 +1,12 @@
 #Joshua Rinaldi
 #101902285
-#9/24/14
+#10/15/14
 #HW5
 
 import math
 import array
 import time
+import sys
 
 class NODE:
 	def __init__(self):
@@ -74,7 +75,7 @@ def dfs(node):
 	return pathMatrix
 
 def main():
-	name = raw_input('please type the name of the Input File: ')
+	name = sys.argv[-1]
 	iFile = open(name, 'r')
 	matrix = makeMatrix(iFile)
 	#print (matrix)
