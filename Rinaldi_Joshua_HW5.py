@@ -28,6 +28,7 @@ def buildNodes(word):
 def makeMatrix(iFile):
 	words = iFile.readlines()
 	words = map(lambda s: s.strip(), words)
+	print words
 	Length = 0
 	for i in words:
 		if (len(i) > Length):
